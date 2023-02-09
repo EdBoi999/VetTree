@@ -32,7 +32,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+ customFields: {
+   edward: 'k lost',
+ },
   presets: [
     [
       'classic',
@@ -71,14 +73,9 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/eddie', label: 'Live Test', position: 'left'},
+            {to: '/docs/introduction', label: 'Intro', position: 'left'},
+            {to: '/docs/eddie', label: 'Live Test', position: 'left'}, 
+            {to: '/docs/rust2', label: 'Rust2', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -89,19 +86,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-              {
-                label: 'Example of second object in the first group/array',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -129,6 +113,19 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'Tools',
+            items: [
+              {
+                label: 'Homepage1',
+                to: '/',
+              },
+              {
+                label: 'Homepage2',
+                href: '/',
               },
             ],
           },
