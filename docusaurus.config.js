@@ -5,6 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: 'Vet Tree',
   tagline: 'Dinosaurs are cool',
@@ -93,6 +94,10 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
+                to: '/docs/intro',
+              },
+              {
+                label: 'Example of second object in the first group/array',
                 to: '/docs/intro',
               },
             ],
